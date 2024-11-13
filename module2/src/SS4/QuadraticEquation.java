@@ -1,11 +1,11 @@
 package SS4;
 
 public class QuadraticEquation {
-    double a, b, c;
-    private QuadraticEquation(){
+    private double a, b, c;
+    public QuadraticEquation(){
     }
 
-    private QuadraticEquation(double a, double b, double c){
+    public QuadraticEquation(double a, double b, double c){
         this.a = a;
         this.b = b;
         this.c = c;
@@ -16,10 +16,18 @@ public class QuadraticEquation {
     }
 
     public double getRoot1(){
-        return (-b+(b*b-4*a*c)/(b*b-4*a*c))/(2*a);
+        double delta= getDiscriminant();
+        if(delta < 0){
+            return 0;
+        }
+        return (-b+Math.sqrt(delta)) / (2*a);
     }
 
     public double getRoot2(){
-        return (-b-(b*b-4*a*c)/(b*b-4*a*c))/(2*a);
+        double delta= getDiscriminant();
+        if(delta < 0){
+            return 0;
+        }
+        return (-b-Math.sqrt(delta)) / (2*a);
     }
 }
