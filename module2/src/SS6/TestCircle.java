@@ -2,13 +2,13 @@ package SS6;
 
 public class TestCircle {
     public static void main(String[] args){
-        circle circle= new circle();
+        Circle circle= new Circle();
         System.out.println(circle);
 
-        circle = new circle(3.5);
+        circle = new Circle(3.5);
         System.out.println(circle);
 
-        circle = new circle (3.5, "indigo", false);
+        circle = new Circle(3.5, "indigo", false);
         System.out.println(circle);
     }
 }

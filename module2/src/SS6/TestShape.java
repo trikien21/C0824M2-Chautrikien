@@ -2,10 +2,10 @@ package SS6;
 
 public class TestShape {
     public static void main(String[] args){
-        shape shape= new shape();
+        Shape shape= new Shape();
         System.out.println(shape);
 
-        shape= new shape("red" , false);
+        shape= new Shape("red" , false);
         System.out.println(shape);
     }
 }

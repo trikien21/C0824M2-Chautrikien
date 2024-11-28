@@ -1,6 +1,6 @@
 package SS6;
 
-public class rectangle extends shape{
+public class rectangle extends Shape {
     private double width= 1.0;
     private double length= 1.0;
 
@@ -23,6 +23,7 @@ public class rectangle extends shape{
     }
 
     public void setWidth(double width){
+
         this.width= width;
     }
 
@@ -31,6 +32,7 @@ public class rectangle extends shape{
     }
 
     public void setLength(double length){
+
         this.length= length;
     }
 
